@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* 루트(root) 요소에서 사용할 색상 변수 정의 */
+:root {
+  --primaryColor: #90A959;    /* 기본 주요 색상 변수 */
+  --secondColor: #E9B872;    /* 보조 색상 변수 */
+  --mainWhite: #fff;         /* 주로 사용되는 흰색 */
+  --mainBlack: #222;         /* 주로 사용되는 검은색 */
+  --mainRed: #C45151;        /* 주로 사용되는 빨간색 */
+  --mainGreen: #4CAF50;      /* 주로 사용되는 녹색 */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 모든 요소에 대한 기본 스타일링 설정 */
+* {
+  margin: 0;                /* 모든 요소의 마진을 0으로 설정 */
+  box-sizing: border-box;   /* 모든 요소의 박스 크기를 보더를 포함한 크기로 설정 */
+}
+
+/* 페이지의 본문(body) 스타일링 설정 */
+body {
+  background: var(--secondColor);  /* 페이지 배경색을 두 번째 색상 변수로 설정 */
+  color: var(--mainBlack);         /* 텍스트 색상을 주로 사용하는 검은색으로 설정 */
+}
+
+/* 제목(h1) 요소에 대한 스타일링 설정 */
+h1 {
+  margin: 1rem 0;  /* h1 요소의 위아래 마진을 1rem(여백)으로 설정 */
 }
