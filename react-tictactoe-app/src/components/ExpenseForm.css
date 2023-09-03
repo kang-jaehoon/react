@@ -1,0 +1,43 @@
+/* 
+   .form-center 클래스 스타일링 설정
+   입력 폼 요소들을 가로로 정렬하기 위해 flex 디스플레이를 사용합니다.
+*/
+.form-center {
+  display: flex;
+}
+
+/* 
+   .form-group 클래스 스타일링 설정
+   입력 요소와 레이블을 묶는 그룹을 스타일링합니다.
+*/
+.form-group {
+  padding: 1rem 0.75rem;  /* 위아래로 1rem, 좌우로 0.75rem의 여백을 설정합니다. */
+  flex: 1;                /* flexbox 컨테이너 내에서 공간을 나누기 위해 flex 속성을 사용합니다. */
+}
+
+/* 
+   레이블 스타일링 설정
+   입력 필드의 레이블 스타일을 정의합니다.
+*/
+label {
+  display: block;              /* 블록 수준 요소로 표시하여 위아래 여백을 생성합니다. */
+  color: var(--secondColor);    /* 텍스트 색상을 두 번째 색상 변수로 설정합니다. */
+  font-size: 1rem;             /* 폰트 크기를 1rem으로 설정합니다. */
+  text-transform: capitalize;  /* 텍스트 변형을 사용하여 텍스트를 대문자로 변환합니다. */
+}
+
+/* 
+   입력 필드 스타일링 설정
+   입력 필드의 스타일을 정의합니다.
+*/
+.form-control {
+  background-color: transparent; /* 배경색을 투명하게 설정합니다. */
+  border: none;                 /* 테두리를 없앱니다. */
+  border-bottom: 1px solid var(--secondColor); /* 하단 테두리를 두 번째 색상 변수로 설정합니다. */
+  outline: none;                /* 포커스 시 포커스 효과를 없앱니다. */
+  height: 3rem;                 /* 입력 필드의 높이를 3rem으로 설정합니다. */
+  width: 100%;                  /* 입력 필드의 너비를 100%로 설정합니다. */
+  font-size: 16px;              /* 폰트 크기를 16px로 설정합니다. */
+  margin: 0 0 8px 0;            /* 입력 필드의 바깥쪽 여백을 설정합니다. */
+  padding: 0;                   /* 입력 필드 내부 여백을 없앱니다. */
+}
