@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./ExpenseItem.css";
-import {MdDelete, MdEdit} from 'react-icons/md';
+import { MdDelete, MdEdit } from 'react-icons/md';
+
 // ExpenseItem 컴포넌트 정의
 export class ExpenseItem extends Component {
   render() {
@@ -17,8 +18,8 @@ export class ExpenseItem extends Component {
           <button className='edit-btn'><MdEdit /></button>
           {/* 삭제 버튼 */}
           <button className='clear-btn' onClick={() => this.props.handleDelete(this.props.expense.id)}>
-            
-            <MdDelete /></button>
+            <MdDelete />
+          </button>
         </div>
       </li>
     );
